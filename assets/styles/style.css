@@ -1,0 +1,131 @@
+html{
+    font-size:16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans", cursive;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.title {
+    padding-left: 10px;
+    margin-top: 0.5rem;
+}
+
+.link-list {
+    list-style: none;
+    /* border: 1px solid red; */
+    /* padding-left: 40%; */
+    /* z-index: 2; */
+    position: absolute;
+    right: 10px;
+}
+
+.link {
+    display: inline-block;
+
+}
+
+.link a {
+    text-decoration: none;
+    background-color: rgb(79, 79, 133);
+    color: white;
+    padding: 0.2rem 1rem;
+    border: 1px solid black;
+}
+
+
+
+.img {
+    background-image: url("../images/hockey1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin: 1rem 0;
+}
+
+.article {
+    border: 1px solid red;
+    position: relative;
+}
+
+.article-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 1px solid red;
+    padding-bottom: 0px ;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/Logo_Mighty_ducks-01.png");
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    border: 1px solid red;
+}
+
+.events-list {
+    width: 65%;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    border: 1px solid red;
+
+}
+
+.events-list li {
+    margin-bottom: 1.7rem;
+}
+
+.events-list li p {
+    margin-left: 2rem;
+}
+
+a:hover {
+    background-color: #309236e0;
+}
+
+/*con inline block*/
+
+/* .logo {
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/Logo_Mighty_ducks-01.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: 1px solid red;
+    margin-top: -500px
+}
+
+.events-list {
+    width: 65%;
+    list-style: none;
+    top: -150px;
+    left: 160px;
+    display: inline-block;
+    border: 1px solid red;
+    margin: 0 50px;
+    overflow: hidden;
+} */
+
+
+/*
+preguntas
+
+- como hacer para sacar el scroll vertical
+- como hacer que no haya overflow para la derecha
+
+*/
