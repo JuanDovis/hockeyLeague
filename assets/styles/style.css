@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Comic Sans", cursive;
+}
 
+/*HEADER*/
+
+.header {
+    margin-bottom: .4rem;
 }
 
 .main-title {
@@ -14,23 +19,27 @@
 
 .nav .link-list {
     list-style: none;
-    position: absolute;
-    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .5rem;
 }
 
 .nav .link {
-    display: inline-block;
+    padding: 0.2rem 1rem;
+    border: 1px solid black;
+    background-color: rgb(79, 79, 133);
+    margin: 0 .5rem;
+    box-shadow: 5px 5px 5px rgb(129, 128, 128);
+    border-radius: 5px;
 }
 
 .nav .link a {
     text-decoration: none;
-    background-color: rgb(79, 79, 133);
     color: white;
-    padding: 0.2rem 1rem;
-    border: 1px solid black;
+
 }
 
-nav .link a:hover {
+nav .link:hover {
     background-color: #309236e0;
 }
 
@@ -39,31 +48,40 @@ nav .link a:hover {
     background-size: cover;
     background-position: center;
     height: 200px;
-    margin: 1rem 0;
+    margin-top: -.5rem;
 }
 
-.article {
-    position: relative;
+/*ARTICLE*/
+
+.content {
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
+    padding-right: 1rem;
 }
 
-.article-title{
+.article .container {
+    display: flex;
+}
+
+.article-title {
     text-align: center;
+    margin-bottom: 1rem;
+    border: 1px solid black;
 }
 
-.logo {
-    width: 150px;
-    height: 150px;
-    background-image: url("../images/Logo_Mighty_ducks-01.png");
-    background-size: cover;
-    background-position: center;
+.article .logo {
+    width: 15%;
+    min-width: 130px;
+    flex-shrink: 0;
+}
+
+.article .logo img {
+    max-width: 100%;
+    margin-top: -10px;
 }
 
 .article-list {
     list-style: none;
-    position: absolute;
-    top: 40px;
-    left: 210px;
-    width: 70%;
 }
 
 .article-list li {
@@ -72,15 +90,120 @@ nav .link a:hover {
 
 .article-list p {
     padding-top: .15rem;
-    text-indent: 5%;
+}
+
+.article-list .p-about {
+    text-indent: 3rem;
 }
 
 .article-list .index-li h3 {
     font-style: italic;
 }
 
-.contact-list p{
+
+/*CONTACT*/
+
+.contact-list p {
     margin-bottom: .5rem;
 }
 
+/*RULEs*/
 
+.content-rules h3 {
+    margin: 1rem 0;
+}
+
+.content-rules .rules-title,
+.content-rules .subtitle {
+    text-align: center;
+    margin: 0;
+}
+
+.content-rules .subtitle {
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.content-rules p {
+    text-indent: 1.5rem;
+}
+
+.content-rules ol {
+    list-style: decimal inside;
+}
+
+.content-rules ol > li {
+    margin: 1rem 0;
+}
+
+.content-rules ol {
+    font-weight: bold;
+}
+
+.content-rules ol>li>span {
+    font-weight: normal;
+}
+
+.content-rules .rules-ol-nested { 
+    list-style: lower-latin;
+    margin-left: 3rem;
+    font-weight: normal;
+}
+
+.content-rules .rules-ol-nested li {
+    margin: 0;
+}
+
+.content-rules ul {
+    list-style: circle inside;
+    margin-left: 2rem;
+}
+
+/*GAME INFO*/
+
+.content.table {
+    width:100%;
+    padding: 0;
+}
+
+.content.game-info  h3,
+.content.game-info  h4{
+    margin: 1rem 0;
+}
+
+.content.game-info h4{
+    text-decoration:underline;
+    font-style: italic;
+    font-weight: normal;
+}
+
+table{
+    margin: 3rem auto;
+}
+
+th,
+td {
+  padding: .3rem 1.5rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.game-info span{
+    font-weight:bold;
+}
+
+.game-info p{
+    margin: 1rem 0;
+}
+.game-info .director{
+    margin-top:2rem;
+}
+.game-info-contact{
+    display: flex;
+}
+.content.game-info .game-info-contact p{
+    margin:0;
+}
+.content.game-info .game-info-contact p:last-child{
+    margin-left: auto;
+
+}
