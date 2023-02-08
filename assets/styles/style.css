@@ -1,3 +1,7 @@
+body {
+    width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -213,4 +217,112 @@ td {
 
 .content.game-info .game-info-contact p:last-child {
     margin-left: auto;
+}
+
+.maps {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps-title {
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.maps h2 {
+    margin-bottom: .5rem;
+}
+
+.maps div {
+    margin: 1rem;
+}
+
+/*FORM*/
+form {
+    width: 95%;
+
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.first-fieldset div{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    flex-wrap: wrap;
+}
+
+label {
+    display: inline-block;
+    /* margin: 0rem .5rem;; */
+}
+
+.first-fieldset div:last-child {
+    max-width: 70%;
+}
+
+.second-fieldset div{
+    margin: 1rem 0;
+}
+.second-fieldset h3,
+.second-fieldset h4 {
+    margin-bottom: .5rem; 
+}
+
+.second-fieldset .uniform,
+.second-fieldset .position{
+    display: flex;
+    margin: 0;
+}
+.uniform div,
+.position div {
+    margin: 0;
+    margin-right: 4rem;
+}
+.second-fieldset .position{
+    margin-bottom: 1.5rem;
+}
+.uniform label,
+.position label{
+    display: block;
+}
+
+fieldset p {
+    margin: .5rem 0 2rem 0;
+}
+
+.signature label {
+    display: block;
+    margin: .5rem 0;
+
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: white;
+    /* border-color: #2d4b4a; */
+    /* border: 1px solid  #2d4b4a, */
+    /* color: white; */
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
 }
